@@ -1,21 +1,55 @@
 What happens when you initialize a repository? Why do you need to do it?
 
 	When you initialize a repository, you create an empty repository in a directory. 
-	We need to do this before adding and tracking anything 
+	We need to do this before adding and tracking anything or creating any commits 
 
 How is the staging area different from the working directory and the repository?
 What value do you think it offers?
 
-How can you use the staging area to make sure you have one commit per logical
-change?
+	Staging area is different because we want to have a draft area where 
+	we can get things right before committing
+	You add to the working area before committing the working area 
+	The value is that you can work knowing you have a failsafe
+	If you have many files to add, you can do so one by one to prevent
+	yourself from mixing things up
 
-What are some situations when branches would be helpful in keeping your history
-organized? How would branches help?
+How can you use the staging area to make sure you have one commit per 
+logical change?
+
+	You can check the difference between working directory, staging area,
+	and repository to double check what changes are in each. When you 
+	check each, you can separate logical differences for various commits 
+
+What are some situations when branches would be helpful in keeping your 
+history organized? How would branches help?
+
+	Branches are useful when you want to work on multiple features at 
+	one time without breaking the overall app. Branches also help with 
+	making features that are separate from each other. 
 
 How do the diagrams help you visualize the branch structure?
+
+	The diagrams help us visualize the branch structure by telling us 
+	which commits are connected to each other and which branches they are
+	on. When we know this and the groups, we can better understand the 
+	structure of related branches 
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
 
+	Merging two branches together creates a new commit with access to 
+	both parent commits and branches. It combines the code for each 
+	branch too. 
+
+	We represent it in the diagram because each commit only has access to 
+	its parent and its own code. 
+
 What are the pros and cons of Git's automatic merging vs. always doing merges
 manually?
+
+	Git's automatic merging allows us to skip steps if certain conditions 
+	are met within the changes made to the two branches. However, this 
+	only works under those conditions since if changes were made to the 
+	same code, it would cause a conflict that needs human attention in 
+	order to resolve the changes made to the same lines of code 
+	
