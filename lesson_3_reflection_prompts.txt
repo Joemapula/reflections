@@ -46,3 +46,10 @@ master?  What benefits does each approach have?
     make changes without interrupting the work flow of another 
     collaborator. It's harder, but overall easier when working with 
     other people on the same project. 
+
+    Making changes in a separate branch also allows you to have a copy 
+    of the origin/master branch and keep it up to date without worrying 
+    about incorporating your changes right away. Instead, you can merge 
+    them when you're ready. 
+
+    
